@@ -1,0 +1,14 @@
+prefix=C:\Project\Library-Reconstruction\VMTK-project\ITK-5.3.0
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: hdf5
+Description: HDF5 (Hierarchical Data Format 5) Software Library
+Version: 1.12.1
+
+Cflags: -I${includedir}
+Libs: -L${libdir} 
+Requires: 
+Libs.private:  -lzlib  -lhdf5
+Requires.private: 

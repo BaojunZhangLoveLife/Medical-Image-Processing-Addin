@@ -1,0 +1,14 @@
+prefix=C:\Project\Library-Reconstruction\VMTK-project\ITK-5.3.0
+exec_prefix=${prefix}
+symbol_prefix=itkzlib_
+libdir=lib
+sharedlibdir=${libdir}
+includedir=include/ITK-5.3/itkzlib-ng
+
+Name: zlib
+Description: zlib-ng compression library
+Version: 1.2.12.zlib-ng
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
